@@ -15,6 +15,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
 
+from sklearn.cluster import KMeans
+
 
 def extract_from_json_as_np_array(key, json_data):
     """ helper functie om data uit de json te halen en om te zetten naar numpy array voor sklearn"""
@@ -25,7 +27,7 @@ def extract_from_json_as_np_array(key, json_data):
     return np.array(data_as_array)
 
 
-STUDENTNUMMER = "1234567" # TODO: aanpassen aan je eigen studentnummer
+STUDENTNUMMER = "0908034" # TODO: aanpassen aan je eigen studentnummer
 
 assert STUDENTNUMMER != "1234567", "Verander 1234567 in je eigen studentnummer"
 
@@ -43,8 +45,6 @@ kmeans_training = data.clustering_training()
 # extract de x waarden
 X = extract_from_json_as_np_array("x", kmeans_training)
 
-#print(X)
-
 # slice kolommen voor plotten (let op, dit is de y voor de y-as, niet te verwarren met een y van de data)
 x = X[...,0]
 y = X[...,1]
@@ -52,14 +52,35 @@ y = X[...,1]
 # teken de punten
 for i in range(len(x)):
     plt.plot(x[i], y[i], 'k.') # k = zwart
+    # print(i)
+    # print(x[i])
+    # print(y[i])
 
 plt.axis([min(x), max(x), min(y), max(y)])
-plt.show()
+
 
 # TODO: print deze punten uit en omcirkel de mogelijke clusters
 
 
 # TODO: ontdek de clusters mbv kmeans en teken een plot met kleurtjes
+
+
+kmeans = KMeans(n_clusters=3)
+kmeans = kmeans.fit(X)
+labels = kmeans.predict(X)
+centroids = kmeans.cluster_centers_
+
+plt.scatter(centroids[:, 0], centroids[:, 1],
+            marker='x', s=169, linewidths=3,
+            color='r', zorder=10)
+
+for i in set(kmeans.labels_):
+    index = kmeans.labels_ == i
+    plt.plot(X[index,0], X[index,1], 'o')
+plt.show()
+
+
+
 
 
 # SUPERVISED LEARNING
