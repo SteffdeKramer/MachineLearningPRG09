@@ -61,7 +61,7 @@ plt.show()
 # TODO: ontdek de clusters mbv kmeans en teken een plot met kleurtjes
 
 
-kmeans = KMeans(n_clusters=3)
+kmeans = KMeans(n_clusters=2)
 kmeans = kmeans.fit(X)
 labels = kmeans.predict(X)
 centroids = kmeans.cluster_centers_
