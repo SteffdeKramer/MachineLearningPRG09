@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/starter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+            <state relative-caret-position="405">
+              <caret line="143" column="48" selection-start-line="143" selection-start-column="48" selection-end-line="143" selection-end-column="48" />
               <folding>
                 <element signature="e#161#214#0" expanded="true" />
               </folding>
@@ -55,11 +55,6 @@
             <path>
               <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -119,6 +114,9 @@
       <module name="CMTPRG01-9_machine_learning_python_startercode 2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -175,17 +173,21 @@
       <workItem from="1550058464745" duration="572000" />
       <workItem from="1550059406840" duration="11000" />
       <workItem from="1550140839307" duration="4733000" />
-      <workItem from="1550652384507" duration="3445000" />
+      <workItem from="1550652384507" duration="9892000" />
+      <workItem from="1550767599350" duration="430000" />
+      <workItem from="1550842677303" duration="90000" />
+      <workItem from="1551103994456" duration="2836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9979000" />
+    <option name="totallyTimeSpent" value="19782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23962805" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -200,11 +202,11 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.44457832" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.48433736" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.30963856" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.2739628" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.26037195" />
       <window_info anchor="right" x="0" y="0" width="310" height="677" id="Documentation" order="4" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
@@ -225,8 +227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/starter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+        <state relative-caret-position="405">
+          <caret line="143" column="48" selection-start-line="143" selection-start-column="48" selection-end-line="143" selection-end-column="48" />
           <folding>
             <element signature="e#161#214#0" expanded="true" />
           </folding>
