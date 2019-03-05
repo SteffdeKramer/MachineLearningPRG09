@@ -141,11 +141,25 @@ plt.show()
 
 # tryal
 
-clf = LogisticRegression(max_iter=5000).fit(X, Y)
-Y_pred = clf.predict(X[:, :])
+Y_test = clf.predict(X_test)
+
+# aasdf
+
+clf = LogisticRegression(max_iter=5000).fit(X_test, Y_test)
+Y_test_pred = clf.predict(X_test[:, :])
+
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(X_test, Y_test)
+Y_d_test_pred = clf.predict(X_test[:, :])
+
+predict_1_test = accuracy_score(Y_test, Y_test_pred)
+predict_2_test = accuracy_score(Y_test, Y_d_test_pred)
+
+print(predict_1_test)
+print(predict_2_test)
 
 
-Z = np.zeros(100) # dit is een gok dat alles 0 is... kan je zelf voorspellen hoeveel procent er goed voorspeld is?
+Z = Y_test_pred # dit is een gok dat alles 0 is... kan je zelf voorspellen hoeveel procent er goed voorspeld is?
 
 # stuur je voorspelling naar de server om te kijken hoe goed je het gedaan hebt
 classification_test = data.classification_test(Z.tolist()) # tolist zorgt ervoor dat het numpy object uit de predict omgezet wordt naar een 'normale' lijst van 1'en en 0'en
